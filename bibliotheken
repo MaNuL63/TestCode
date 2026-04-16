@@ -1,0 +1,21 @@
+Hier findet man die gesamten Bibliotheken die Roger und Ich für den Raspberry Pi und den Sensoren, Aktoren und Display brauchen. Vorraussgesetzt man hat die Virtuelle Python Umgebung installiert
+Als Zusammenfassung sieht man hier die einzelnen Bibliotheken als ein command, man kann diesen in die shell kopieren und hat dann alles brauchbare:
+
+pip install adafruit-blinka adafruit-circuitpython-rgb-display Pillow adafruit-circuitpython-ads1x15 gpiozero rpi-lgpio
+
+Display: 
+adafruit-circuitpython-rgb-display 
+Pillow bzw PIL 
+adafruit-blinka
+
+Joystick + ADS1115:
+adafruit-circuitpython-ads1x15
+
+LED + Buzzer
+gpiozero
+rpi-lgpio
+
+allgemeine Pakete über Apt:
+sudo apt install python3-venv 
+sudo apt install i2c-tools
+
