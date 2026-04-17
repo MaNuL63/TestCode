@@ -92,7 +92,7 @@ try:
 
         # STEUERUNG P1 
         if can_change_dir1:
-            # X-Achse (Links/Rechts) - LOGIK UMGEDREHT WEIL FALSCH VERKABELT bin halt faul bro kb mehr auf Kabel gehabt
+            # X-Achse (Links/Rechts) - ACHSE habe ich konvertiert, wegen der Verkabelung, die Verkabelung wollte ich so lassen
             if v1x > HIGH_THR and dir1 != (BLOCK_SIZE, 0):    
                 dir1 = (-BLOCK_SIZE, 0); can_change_dir1 = False  # Links
             elif v1x < LOW_THR and dir1 != (-BLOCK_SIZE, 0): 
@@ -106,7 +106,7 @@ try:
 
         #  STEUERUNG P2 
         if can_change_dir2:
-            # X-Achse (Links/Rechts) - LOGIK UMGEDREHT SIEHE OBEN LASS DAS SO 
+            # X-Achse (Links/Rechts) - LOGIK UMGEDREHT SIEHE 
             if v2x > HIGH_THR and dir2 != (BLOCK_SIZE, 0):    
                 dir2 = (-BLOCK_SIZE, 0); can_change_dir2 = False
             elif v2x < LOW_THR and dir2 != (-BLOCK_SIZE, 0): 
